@@ -1,7 +1,7 @@
 /**
 * PHP Email Form Validation - v3.6
-* URL: https://bootstrapmade.com/php-email-form/
-* Author: BootstrapMade.com
+* URL: https://masaielon.netlify.app/php-email-form/
+* Author: elonmasai@gmail.com
 */
 (function () {
   "use strict";
