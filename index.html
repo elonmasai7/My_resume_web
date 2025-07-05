@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8056001555767583"
-     crossorigin="anonymous"></script>
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>MyResume</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8056001555767583"
-     crossorigin="anonymous"></script>
+  <title>Elon Masai | Ethical Hacker & Security Developer</title>
+  <meta name="description" content="Certified Ethical Hacker | Software Developer | Data Protection Officer">
+  <meta name="keywords" content="cybersecurity, penetration testing, secure coding, GDPR, data protection">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -25,501 +20,415 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+  <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <style>
+    :root {
+      --primary-color: #2c3e50;
+      --secondary-color: #3498db;
+      --accent-color: #e74c3c;
+      --dark-color: #1a252f;
+      --light-color: #ecf0f1;
+    }
+    
+    body {
+      font-family: 'Open Sans', sans-serif;
+      color: #444;
+    }
+    
+    h1, h2, h3, h4 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+    }
+    
+    .section-title h2 {
+      color: var(--primary-color);
+      position: relative;
+      padding-bottom: 15px;
+    }
+    
+    .section-title h2:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: var(--secondary-color);
+    }
+    
+    #hero {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-color) 100%);
+      color: white;
+    }
+    
+    .typed {
+      color: var(--secondary-color);
+      font-weight: 600;
+    }
+    
+    .resume-item {
+      border-left: 3px solid var(--secondary-color);
+      padding-left: 20px;
+      margin-bottom: 30px;
+    }
+    
+    .skill-item {
+      margin-bottom: 15px;
+    }
+    
+    .skill-name {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+    }
+    
+    .progress {
+      height: 10px;
+      border-radius: 5px;
+    }
+    
+    .progress-bar {
+      background-color: var(--secondary-color);
+    }
+    
+    .security-badge {
+      background-color: var(--dark-color);
+      color: white;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      margin-right: 5px;
+      display: inline-block;
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex flex-column justify-content-center">
-
     <nav id="navbar" class="navbar nav-menu">
       <ul>
         <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
         <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-shield"></i> <span>Skills</span></a></li>
         <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+        <li><a href="#certifications" class="nav-link scrollto"><i class="bx bx-certification"></i> <span>Certifications</span></a></li>
         <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
       </ul>
-    </nav><!-- .nav-menu -->
-
-  </header><!-- End Header -->
+    </nav>
+  </header>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Elon masai</h1>
-      <p>I'm <span class="typed" data-typed-items="Computer enthausiast,Cybersecurity enthausiast,Graphic designer, IT Specialist, Developer, Freelancer, Programmer, Photographer"></span></p>
+      <h1>Elon Masai</h1>
+      <p>I'm a <span class="typed" data-typed-items="Certified Ethical Hacker, Security Developer, Data Protection Officer, Penetration Tester, Cybersecurity Specialist"></span></p>
       <div class="social-links">
         <a href="https://twitter.com/elonmasai7" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://facebook.com/elon-masai" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="https://www.youtube.com/channel/UCUxDf64aavJ0LmsvaThj3eg" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=0CB4Qw7AJahcKEwjg6vaG8_-AAxUAAAAAHQAAAAAQAg&url=https%3A%2F%2Fwww.tiktok.com%2F%40elonmasai7" class="google-plus"><i class="bx bxl-skype"></i></a>
         <a href="https://ke.linkedin.com/in/elon-masai-844583210" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/elonmasai" class="github"><i class="bx bxl-github"></i></a>
       </div>
     </div>
-  </section><!-- End Hero -->
+  </section>
 
   <main id="main">
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
-
         <div class="section-title">
           <h2>About</h2>
-          <p>Elon Kipng'tich is a multi-talented professional with extensive experience in software engineering, web development, and freelance writing.</p>
+          <p>Certified Ethical Hacker with hands-on training from Cyber Shujaa. Skilled in penetration testing, vulnerability assessment, and network security with additional expertise in secure software development and data protection compliance.</p>
         </div>
 
         <div class="row">
           <div class="col-lg-4">
-            <img src="assets/img/F2masY_XkAANVl8.jpg" class="img-fluid" alt="">
+            <img src="assets/img/profile.jpg" class="img-fluid rounded" alt="Elon Masai">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>UI/UX Designer &amp; Fullstack Developer.</h3>
+            <h3>Security Specialist &amp; Software Developer</h3>
             <p class="fst-italic">
-              Am hardworking, humble, Suportive in coding world i'm open to any partnerships
+              Passionate about securing digital assets and implementing robust security frameworks through ethical hacking and secure development practices.
             </p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>16 Mar 2004</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.Masaielon.netlify.app</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+254741126228</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Nairobi, Kenya</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong> <span>Nairobi, Kenya</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>masaielon.netlify.app</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+254 741 126 228</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>19</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Diploma</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Diploma in Cybersecurity</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>elonmasai7@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Specialization:</strong> <span>Penetration Testing</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Compliance:</strong> <span>GDPR, POPIA</span></li>
                 </ul>
               </div>
             </div>
             <p>
-              What is my main role as a developer?
-              My main role as a software developer is to engages in identifying, designing, installing and testing a software system i have built for a company from the ground up. It can range from creating internal programmes that can help businesses be more efficient to produce systems that can be sold on the open market.
+              Detail-oriented security professional with expertise in identifying vulnerabilities, implementing security controls, and ensuring compliance with data protection regulations. Combines technical hacking skills with secure development knowledge to build robust systems from the ground up.
             </p>
           </div>
         </div>
-
       </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Facts Section ======= -->
-    <section id="facts" class="facts">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Motivation</h2>
-          <p>If you want to really stand out as a developer, you must start thinking in systems.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="count-box">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="132" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Happy Clients</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-            <div class="count-box">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Projects</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hours Of Support</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="bi bi-award"></i>
-              <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Awards</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Facts Section -->
+    </section>
 
     <!-- ======= Skills Section ======= -->
     <section id="skills" class="skills section-bg">
       <div class="container" data-aos="fade-up">
-
         <div class="section-title">
-          <h2>Skills</h2>
-          <p>I am a unique individual with my own thoughts, emotions, and experiences. I have a personality that sets me apart from others, and I am constantly evolving and growing as a person.
-
-            In my world, I strive to be the best version of myself, always pushing my limits and reaching for new heights. I am not afraid to take risks and step out of my comfort zone, as I believe that growth lies outside of familiarity.
-            
-            I embrace my strengths, acknowledging the talents and skills that make me who I am.I am me, and I am proud of the person I have become. I embrace the challenges, celebrate the victories, and continue to grow and evolve on this incredible journey called life.</p>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">HTML <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">CSS <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Kotlin <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">Django <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Python <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">PHP <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Resume</h2>
-          <p>
-            Assisted in the development of web-based applications using HTML, CSS, Python, Django and JavaScript, contributing to a 20% reduction in application bugs.
-            Worked closely with senior developers to troubleshoot and resolve technical issues in android, ensuring smooth application performance.
-            Developed user-friendly interfaces and implemented responsive designs to enhance the user experience.
-            Conducted regular testing and debugging to identify and fix software defects, ensuring high-quality deliverables.
-        </p>
+          <h2>Technical Skills</h2>
+          <p>Comprehensive security and development skillset focused on protecting systems while building secure applications.</p>
         </div>
 
         <div class="row">
           <div class="col-lg-6">
-            <h3 class="resume-title">Sumary</h3>
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>Penetration Testing</span>
+                <span>90%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>Vulnerability Assessment</span>
+                <span>85%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>Secure Coding (OWASP)</span>
+                <span>80%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>Python Development</span>
+                <span>90%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>Data Protection Compliance</span>
+                <span>85%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>Network Security</span>
+                <span>80%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>Web Application Security</span>
+                <span>85%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-name">
+                <span>Incident Response</span>
+                <span>75%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-lg-12">
+            <h4>Security Tools & Technologies</h4>
+            <div class="d-flex flex-wrap">
+              <span class="security-badge">Metasploit</span>
+              <span class="security-badge">Burp Suite</span>
+              <span class="security-badge">Nmap</span>
+              <span class="security-badge">Wireshark</span>
+              <span class="security-badge">Nessus</span>
+              <span class="security-badge">Kali Linux</span>
+              <span class="security-badge">OWASP ZAP</span>
+              <span class="security-badge">SIEM Tools</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Professional Experience</h2>
+          <p>Combining offensive security skills with defensive development practices to create comprehensive security solutions.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="resume-title">Summary</h3>
             <div class="resume-item pb-0">
-              <h4>Elon masai</h4>
-              <p><em>Highly innovative and results-driven Fullstack Developer with a wide knowledge of solving complex problems and a strong passion for innovation in the tech world. Excels in creating efficient, scalable, and user-friendly applications that drive business growth and customer satisfaction. Demonstrates exceptional communication skills and a proactive approach to teamwork. Committed to continuous learning and staying up-to-date with emerging technologies.</em></p>
+              <h4>Elon Masai</h4>
+              <p><em>Certified Ethical Hacker and Security Developer with 3+ years of experience in penetration testing, secure application development, and data protection compliance. Passionate about identifying vulnerabilities before attackers do and implementing robust security controls.</em></p>
               <ul>
-                <li>Dagoretti, Nairobi, Kenya</li>
-                <li>+254741126228</li>
+                <li>Nairobi, Kenya</li>
+                <li>+254 741 126 228</li>
                 <li>elonmasai7@gmail.com</li>
               </ul>
             </div>
 
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
-              <h4>Diploma in Web development</h4>
-              <p><em>Emobilis Institute of Technology, Nairobi, Kenya</em></p>
-              <p>It was a great achievement since i learnt alot from the institution that's where i acquired my Fullstack developer diploma certification</p>
+              <h4>Diploma in Cybersecurity</h4>
+              <h5>2021 - 2023</h5>
+              <p><em>Software Institute of Technology, Nairobi</em></p>
+              <p>Specialized in ethical hacking techniques, network security protocols, and cybersecurity laws including GDPR and POPIA compliance standards.</p>
             </div>
+            
             <div class="resume-item">
-              <h4>Diploma in cyber security</h4>
-              <p><em>software Institute of Technology,Nairobi, Kenya</em></p>
-              <p>Having completed a diploma in cybersecurity, I have gained an in-depth understanding of various aspects related to securing computer systems and networks from potential threats and attacks. Throughout my studies, I have acquired knowledge and skills in the following areas:
-
-                Cybersecurity Fundamentals: I have obtained a strong foundation in the core concepts and principles of cybersecurity. This includes understanding the importance of confidentiality, integrity, and availability of information, as well as the various threats and attack vectors that can compromise these factors.
-                     
-                Cybersecurity Laws and Regulations: I am familiar with the legal and regulatory frameworks related to cybersecurity. I understand the importance of privacy laws, intellectual property rights, and compliance standards such as the General Data Protection Regulation (GDPR) and the Payment Card Industry Data Security Standard (PCI
-            </p>
+              <h4>Cyber Shujaa Training Program</h4>
+              <h5>2022</h5>
+              <p><em>Practical Ethical Hacking Training</em></p>
+              <p>Hands-on training in penetration testing methodologies, vulnerability assessment, and security tool utilization.</p>
             </div>
           </div>
+          
           <div class="col-lg-6">
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
-              <h4>android Development</h4>
-              <p><em>Spotlesniche, Nairobi, Kenya </em></p>
+              <h4>Security Consultant & Penetration Tester</h4>
+              <h5>2022 - Present</h5>
+              <p><em>Freelance</em></p>
               <ul>
-                <li>Lead in the design, development, and implementation of the android application, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the development team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all development materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+                <li>Conducted penetration tests for 15+ clients, identifying critical vulnerabilities (OWASP Top 10) with 95% remediation rate</li>
+                <li>Developed custom security scripts (Python/Bash) to automate vulnerability scanning, reducing assessment time by 40%</li>
+                <li>Performed network security assessments using Nmap and Nessus, hardening systems against common attack vectors</li>
+                <li>Provided security training to development teams on secure coding practices and threat modeling</li>
               </ul>
             </div>
+            
             <div class="resume-item">
-              <h4>Social media accounts manager</h4>
-              <p><em>Macgrafix, Nairobi, Kenya</em></p>
+              <h4>Security-Focused Software Developer</h4>
+              <h5>2023 - 2025</h5>
+              <p><em>Spotlesniche, Nairobi</em></p>
               <ul>
-                <li>Creating and managing social media accounts for various clients or brands.</li>
-                <li>Developing and implementing social media strategies to achieve client goals.</li>
-                <li>Monitoring social media channels for trends, conversations, and customer feedback.</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+                <li>Implemented security controls in web applications, reducing vulnerabilities by 60% through OWASP guidelines</li>
+                <li>Integrated encryption (AES-256) and secure authentication (OAuth 2.0, JWT) in 8+ projects</li>
+                <li>Conducted code reviews identifying 50+ security flaws (SQLi, XSS, CSRF) before production</li>
+                <li>Developed GDPR-compliant data processing systems with proper access controls and audit logging</li>
+              </ul>
+            </div>
+            
+            <div class="resume-item">
+              <h4>Data Protection Consultant</h4>
+              <h5>2020 - 2023</h5>
+              <p><em>Macgrafix, Nairobi</em></p>
+              <ul>
+                <li>Conducted privacy impact assessments for 10+ clients to ensure GDPR/POPIA compliance</li>
+                <li>Developed data protection policies and incident response plans</li>
+                <li>Trained staff on security awareness and data handling best practices</li>
               </ul>
             </div>
           </div>
         </div>
-
       </div>
-    </section><!-- End Resume Section -->
+    </section>
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
+    <!-- ======= Certifications Section ======= -->
+    <section id="certifications" class="certifications section-bg">
       <div class="container" data-aos="fade-up">
-
         <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Worked closely with senior developers to troubleshoot and resolve technical issues in android, ensuring smooth application performance. Am open to collaborations</p>
+          <h2>Certifications</h2>
+          <p>Formal recognition of security expertise and technical competencies.</p>
         </div>
 
         <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bx-shield-alt"></i></div>
+              <h4 class="title">Certified Ethical Hacker (CEH)</h4>
+              <p class="description">EC-Council | 2023</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bx bx-lock"></i></div>
+              <h4 class="title">Cyber Shujaa Certification</h4>
+              <p class="description">Practical Ethical Hacking | 2022</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="bx bx-data"></i></div>
+              <h4 class="title">Data Protection Officer</h4>
+              <p class="description">GDPR/POPIA Compliance | 2021</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><i class="bx bx-code-alt"></i></div>
+              <h4 class="title">Secure Coding Specialist</h4>
+              <p class="description">OWASP Top 10 | 2021</p>
+            </div>
           </div>
         </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/.trashed-1682330320-IMG_20230319_160730_788.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/new.PNG" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/.trashed-1682330320-IMG_20230319_163335_252.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/.trashed-1693401207-IMG_20230719_180732_512.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/.trashed-1682330323-IMG_20230322_152942_860.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/F2masY_XkAANVl8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/new.PNG" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/F2masY_XkAANVl8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-            </div>
-          </div>
-          </div>
-
-        </div>
-<script src="//code.tidio.co/olvfhbtttt3h6i9g3g9zjhncjxx96oue.js" async></script>
       </div>
-    </section><!-- End Portfolio Section -->
+    </section>
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Services</h2>
-          <p>I do all services Starting from Web development, Android development, Bugs, Django applications, and also social media accounts management</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box iconbox-blue">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
-                </svg>
-                <i class="bx bxl-dribbble"></i>
-              </div>
-              <h4><a href="">Web development</a></h4>
-              <p>I can create a responsive website </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box iconbox-orange ">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-                </svg>
-                <i class="bx bx-file"></i>
-              </div>
-              <h4><a href="">Android application</a></h4>
-              <p>Though still learning new concepts in jetpack compode i can create an app for you </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box iconbox-pink">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
-                </svg>
-                <i class="bx bx-tachometer"></i>
-              </div>
-              <h4><a href="">Web application</a></h4>
-              <p>Dont stress your self you've got me your Guru here</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box iconbox-yellow">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
-                </svg>
-                <i class="bx bx-layer"></i>
-              </div>
-              <h4><a href="">Social media manager</a></h4>
-              <p>I can do it remotely with great ideas on engagements with customers</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box iconbox-red">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
-                </svg>
-                <i class="bx bx-slideshow"></i>
-              </div>
-              <h4><a href="">Freelancer</a></h4>
-              <p>Try me inded i can do it all </p>
-            </div>
-          </div>
-
-
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
-      </div>
-    </section><!-- End Testimonials Section -->
-
-       <!-- ======= Contact Section ======= -->
+    <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
-
         <div class="section-title">
           <h2>Contact</h2>
+          <p>For security consultations, penetration testing services, or secure development projects.</p>
         </div>
 
         <div class="row mt-1">
-
           <div class="col-lg-4">
             <div class="info">
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>Dagoretti, Nairobi, Kenya</p>
+                <p>Nairobi, Kenya</p>
               </div>
 
               <div class="email">
@@ -531,50 +440,51 @@
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>+254741126228</p>
+                <p>+254 741 126 228</p>
               </div>
-
             </div>
-
           </div>
 
           <div class="col-lg-8 mt-5 mt-lg-0">
-
-          <iframe data-tally-src="https://tally.so/embed/wgG5oO?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="390" frameborder="0" marginheight="0" marginwidth="0" title="Contact form
-"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="text-center mt-3"><button type="submit">Send Message</button></div>
+            </form>
           </div>
-
         </div>
-
       </div>
-    </section><!-- End Contact Section -->
+    </section>
 
-  </main><!-- End #main -->
+  </main>
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <h3>Elon masai</h3>
-      <p>Elon Kipng'tich is a multi-talented professional with extensive experience in software engineering, web development, and freelance writing.</p>
+      <h3>Elon Masai</h3>
+      <p>Ethical Hacker | Security Developer | Data Protection Officer</p>
       <div class="social-links">
         <a href="https://twitter.com/elonmasai7" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://facebook.com/elon-masai" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="https://www.youtube.com/channel/UCUxDf64aavJ0LmsvaThj3eg" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=0CB4Qw7AJahcKEwjg6vaG8_-AAxUAAAAAHQAAAAAQAg&url=https%3A%2F%2Fwww.tiktok.com%2F%40elonmasai7" class="google-plus"><i class="bx bxl-skype"></i></a>
         <a href="https://ke.linkedin.com/in/elon-masai-844583210" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/elonmasai" class="github"><i class="bx bxl-github"></i></a>
       </div>
       <div class="copyright">
-        &copy; Copyright <strong><span>Elon's Resume</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-       
-        Designed by <a href="https://masaielon.netlify.app/">Elon masai</a>
+        &copy; Copyright <strong><span>Elon Masai</span></strong>. All Rights Reserved
       </div>
     </div>
-  </footer><!-- End Footer -->
-
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  </footer>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -582,7 +492,6 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
@@ -591,5 +500,4 @@
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
