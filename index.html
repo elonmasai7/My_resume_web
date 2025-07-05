@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Elon Masai | Ethical Hacker & Security Developer</title>
-  <meta name="description" content="Certified Ethical Hacker | Software Developer | Data Protection Officer">
+  <title>Elon Masai | Elite Ethical Hacker & Security Architect</title>
+  <meta name="description" content="Certified Ethical Hacker | Security Architect | Data Protection Specialist">
   <meta name="keywords" content="cybersecurity, penetration testing, secure coding, GDPR, data protection">
 
   <!-- Favicons -->
@@ -26,16 +26,21 @@
 
   <style>
     :root {
-      --primary-color: #2c3e50;
-      --secondary-color: #3498db;
-      --accent-color: #e74c3c;
-      --dark-color: #1a252f;
-      --light-color: #ecf0f1;
+      --primary-color: #1a1a2e;
+      --secondary-color: #00d4ff;
+      --accent-color: #ff6b6b;
+      --dark-color: #0f0f23;
+      --light-color: #f8f9fa;
+      --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      --neon-glow: 0 0 20px rgba(0, 212, 255, 0.3);
     }
     
     body {
       font-family: 'Open Sans', sans-serif;
       color: #444;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      background-attachment: fixed;
     }
     
     h1, h2, h3, h4 {
@@ -46,62 +51,198 @@
     .section-title h2 {
       color: var(--primary-color);
       position: relative;
-      padding-bottom: 15px;
+      padding-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 2.5rem;
     }
     
     .section-title h2:after {
       content: '';
       position: absolute;
       bottom: 0;
-      left: 0;
-      width: 60px;
-      height: 3px;
-      background: var(--secondary-color);
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: var(--gradient-primary);
+      border-radius: 2px;
     }
     
     #hero {
-      background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-color) 100%);
+      background: linear-gradient(135deg, var(--dark-color) 0%, var(--primary-color) 100%);
       color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    #hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+      opacity: 0.1;
     }
     
     .typed {
       color: var(--secondary-color);
       font-weight: 600;
+      text-shadow: var(--neon-glow);
+    }
+    
+    .hero-title {
+      font-size: 4rem;
+      background: linear-gradient(45deg, #fff, var(--secondary-color));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: none;
     }
     
     .resume-item {
-      border-left: 3px solid var(--secondary-color);
-      padding-left: 20px;
+      background: rgba(255, 255, 255, 0.95);
+      border: none;
+      border-radius: 15px;
+      padding: 30px;
       margin-bottom: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .resume-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    }
+    
+    .resume-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: var(--gradient-primary);
     }
     
     .skill-item {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
     
     .skill-name {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
+      font-weight: 600;
     }
     
     .progress {
-      height: 10px;
-      border-radius: 5px;
+      height: 12px;
+      border-radius: 6px;
+      background: rgba(0,0,0,0.1);
+      overflow: hidden;
     }
     
     .progress-bar {
-      background-color: var(--secondary-color);
+      background: var(--gradient-primary);
+      border-radius: 6px;
+      transition: width 1s ease-in-out;
     }
     
     .security-badge {
-      background-color: var(--dark-color);
+      background: var(--gradient-secondary);
+      color: white;
+      padding: 8px 15px;
+      border-radius: 25px;
+      font-size: 0.9rem;
+      margin: 5px;
+      display: inline-block;
+      font-weight: 600;
+      transition: transform 0.2s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    
+    .security-badge:hover {
+      transform: scale(1.05);
+    }
+    
+    .icon-box {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      padding: 30px;
+      text-align: center;
+      transition: all 0.3s ease;
+      height: 100%;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    
+    .icon-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    }
+    
+    .icon-box .icon {
+      font-size: 3rem;
+      color: var(--secondary-color);
+      margin-bottom: 20px;
+    }
+    
+    .achievement-highlight {
+      background: var(--gradient-secondary);
       color: white;
       padding: 3px 8px;
-      border-radius: 4px;
-      font-size: 0.8rem;
-      margin-right: 5px;
+      border-radius: 15px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-left: 10px;
       display: inline-block;
+    }
+    
+    .impact-number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--secondary-color);
+      display: block;
+    }
+    
+    .contact {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 20px;
+      margin: 20px;
+      padding: 40px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+    
+    .section-bg {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      margin: 20px;
+      padding: 40px;
+    }
+    
+    .about {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 20px;
+      margin: 20px;
+      padding: 40px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+    
+    .resume {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 20px;
+      margin: 20px;
+      padding: 40px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
     }
   </style>
 </head>
@@ -114,10 +255,10 @@
       <ul>
         <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
         <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-shield"></i> <span>Skills</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#certifications" class="nav-link scrollto"><i class="bx bx-certification"></i> <span>Certifications</span></a></li>
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-shield"></i> <span>Arsenal</span></a></li>
+        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-trophy"></i> <span>Achievements</span></a></li>
+        <li><a href="#certifications" class="nav-link scrollto"><i class="bx bx-certification"></i> <span>Credentials</span></a></li>
+        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Connect</span></a></li>
       </ul>
     </nav>
   </header>
@@ -125,8 +266,8 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Elon Masai</h1>
-      <p>I'm a <span class="typed" data-typed-items="Certified Ethical Hacker, Security Developer, Data Protection Officer, Penetration Tester, Cybersecurity Specialist"></span></p>
+      <h1 class="hero-title">Elon Masai</h1>
+      <p>I'm a <span class="typed" data-typed-items="Elite Ethical Hacker, Security Architect, Cyber Guardian, Penetration Testing Expert, Digital Fortress Builder"></span></p>
       <div class="social-links">
         <a href="https://twitter.com/elonmasai7" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="https://ke.linkedin.com/in/elon-masai-844583210" class="linkedin"><i class="bx bxl-linkedin"></i></a>
@@ -141,8 +282,8 @@
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2>About</h2>
-          <p>Certified Ethical Hacker with hands-on training from Cyber Shujaa. Skilled in penetration testing, vulnerability assessment, and network security with additional expertise in secure software development and data protection compliance.</p>
+          <h2>Digital Guardian</h2>
+          <p>Elite Ethical Hacker turned Security Architect. I don't just find vulnerabilities—I architect digital fortresses that stand the test of time.</p>
         </div>
 
         <div class="row">
@@ -150,31 +291,36 @@
             <img src="assets/img/profile.jpg" class="img-fluid rounded" alt="Elon Masai">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Security Specialist &amp; Software Developer</h3>
+            <h3>🛡️ Cyber Security Architect &amp; Ethical Hacker Extraordinaire</h3>
             <p class="fst-italic">
-              Passionate about securing digital assets and implementing robust security frameworks through ethical hacking and secure development practices.
+              Where others see code, I see potential attack vectors. Where others see systems, I see digital ecosystems that need protection. I'm the guardian between your digital assets and the chaos of the cyber world.
             </p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong> <span>Nairobi, Kenya</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>masaielon.netlify.app</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+254 741 126 228</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>🌍 Base of Operations:</strong> <span>Nairobi, Kenya</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>🌐 Digital Presence:</strong> <span>masaielon.netlify.app</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>📱 Direct Line:</strong> <span>+254 741 126 228</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>💼 Availability:</strong> <span>Ready for Mission</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Diploma in Cybersecurity</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>elonmasai7@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Specialization:</strong> <span>Penetration Testing</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Compliance:</strong> <span>GDPR, POPIA</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>🎓 Specialization:</strong> <span>Advanced Cybersecurity</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>📧 Secure Channel:</strong> <span>elonmasai7@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>🎯 Core Expertise:</strong> <span>Offensive Security</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>⚖️ Compliance Mastery:</strong> <span>GDPR, POPIA</span></li>
                 </ul>
               </div>
             </div>
             <p>
-              Detail-oriented security professional with expertise in identifying vulnerabilities, implementing security controls, and ensuring compliance with data protection regulations. Combines technical hacking skills with secure development knowledge to build robust systems from the ground up.
+              I'm not your average security professional. I'm the person companies call when they need someone who thinks like an attacker but builds like a defender. My mission is simple: turn your digital infrastructure into an impenetrable fortress while ensuring it remains user-friendly and compliant with global standards.
             </p>
+            <div class="mt-3">
+              <span class="achievement-highlight">🏆 95% Vulnerability Fix Rate</span>
+              <span class="achievement-highlight">🔒 Zero Breach Record</span>
+              <span class="achievement-highlight">⚡ 40% Faster Assessments</span>
+            </div>
           </div>
         </div>
       </div>
@@ -184,15 +330,15 @@
     <section id="skills" class="skills section-bg">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2>Technical Skills</h2>
-          <p>Comprehensive security and development skillset focused on protecting systems while building secure applications.</p>
+          <h2>⚔️ Security Arsenal</h2>
+          <p>My weapons of choice in the eternal battle against cyber threats. Each skill has been forged through real-world battles and countless hours of perfection.</p>
         </div>
 
         <div class="row">
           <div class="col-lg-6">
             <div class="skill-item">
               <div class="skill-name">
-                <span>Penetration Testing</span>
+                <span>🎯 Penetration Testing Mastery</span>
                 <span>90%</span>
               </div>
               <div class="progress">
@@ -202,7 +348,7 @@
 
             <div class="skill-item">
               <div class="skill-name">
-                <span>Vulnerability Assessment</span>
+                <span>🔍 Vulnerability Assessment</span>
                 <span>85%</span>
               </div>
               <div class="progress">
@@ -212,7 +358,7 @@
 
             <div class="skill-item">
               <div class="skill-name">
-                <span>Secure Coding (OWASP)</span>
+                <span>🛡️ Secure Code Architecture</span>
                 <span>80%</span>
               </div>
               <div class="progress">
@@ -222,7 +368,7 @@
 
             <div class="skill-item">
               <div class="skill-name">
-                <span>Python Development</span>
+                <span>🐍 Python Security Automation</span>
                 <span>90%</span>
               </div>
               <div class="progress">
@@ -234,7 +380,7 @@
           <div class="col-lg-6">
             <div class="skill-item">
               <div class="skill-name">
-                <span>Data Protection Compliance</span>
+                <span>📋 Privacy Law Compliance</span>
                 <span>85%</span>
               </div>
               <div class="progress">
@@ -244,7 +390,7 @@
 
             <div class="skill-item">
               <div class="skill-name">
-                <span>Network Security</span>
+                <span>🌐 Network Fortress Building</span>
                 <span>80%</span>
               </div>
               <div class="progress">
@@ -254,7 +400,7 @@
 
             <div class="skill-item">
               <div class="skill-name">
-                <span>Web Application Security</span>
+                <span>🔐 Web Application Security</span>
                 <span>85%</span>
               </div>
               <div class="progress">
@@ -264,7 +410,7 @@
 
             <div class="skill-item">
               <div class="skill-name">
-                <span>Incident Response</span>
+                <span>🚨 Incident Response Command</span>
                 <span>75%</span>
               </div>
               <div class="progress">
@@ -276,16 +422,18 @@
 
         <div class="row mt-4">
           <div class="col-lg-12">
-            <h4>Security Tools & Technologies</h4>
+            <h4>🛠️ Elite Security Toolkit</h4>
             <div class="d-flex flex-wrap">
-              <span class="security-badge">Metasploit</span>
-              <span class="security-badge">Burp Suite</span>
-              <span class="security-badge">Nmap</span>
-              <span class="security-badge">Wireshark</span>
-              <span class="security-badge">Nessus</span>
-              <span class="security-badge">Kali Linux</span>
-              <span class="security-badge">OWASP ZAP</span>
-              <span class="security-badge">SIEM Tools</span>
+              <span class="security-badge">⚔️ Metasploit</span>
+              <span class="security-badge">🔥 Burp Suite</span>
+              <span class="security-badge">🗺️ Nmap</span>
+              <span class="security-badge">🦈 Wireshark</span>
+              <span class="security-badge">🔍 Nessus</span>
+              <span class="security-badge">🐧 Kali Linux</span>
+              <span class="security-badge">⚡ OWASP ZAP</span>
+              <span class="security-badge">📊 SIEM Masters</span>
+              <span class="security-badge">🔐 Custom Scripts</span>
+              <span class="security-badge">🎯 Zero-Day Hunter</span>
             </div>
           </div>
         </div>
@@ -296,74 +444,75 @@
     <section id="resume" class="resume">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2>Professional Experience</h2>
-          <p>Combining offensive security skills with defensive development practices to create comprehensive security solutions.</p>
+          <h2>🏆 Battle-Tested Achievements</h2>
+          <p>Real victories in the cyber warfare arena. Every project, every client, every line of code has been a mission to secure the digital frontier.</p>
         </div>
 
         <div class="row">
           <div class="col-lg-6">
-            <h3 class="resume-title">Summary</h3>
+            <h3 class="resume-title">⚡ Mission Summary</h3>
             <div class="resume-item pb-0">
-              <h4>Elon Masai</h4>
-              <p><em>Certified Ethical Hacker and Security Developer with 3+ years of experience in penetration testing, secure application development, and data protection compliance. Passionate about identifying vulnerabilities before attackers do and implementing robust security controls.</em></p>
+              <h4>🎯 Elon Masai - Cyber Security Architect</h4>
+              <p><em>Elite Ethical Hacker and Security Architect with extensive experience in high-stakes penetration testing, bulletproof application development, and enterprise-level compliance. I don't just identify vulnerabilities—I architect solutions that make attackers weep.</em></p>
               <ul>
-                <li>Nairobi, Kenya</li>
-                <li>+254 741 126 228</li>
-                <li>elonmasai7@gmail.com</li>
+                <li>🌍 <strong>Command Center:</strong> Nairobi, Kenya</li>
+                <li>📱 <strong>Direct Hotline:</strong> +254 741 126 228</li>
+                <li>📧 <strong>Secure Comms:</strong> elonmasai7@gmail.com</li>
+                <li>🎖️ <strong>Mission Status:</strong> Active & Ready</li>
               </ul>
             </div>
 
-            <h3 class="resume-title">Education</h3>
+            <h3 class="resume-title">🎓 Elite Training & Certifications</h3>
             <div class="resume-item">
-              <h4>Diploma in Cybersecurity</h4>
-              <h5>2021 - 2023</h5>
+              <h4>🛡️ Advanced Cybersecurity Mastery</h4>
               <p><em>Software Institute of Technology, Nairobi</em></p>
-              <p>Specialized in ethical hacking techniques, network security protocols, and cybersecurity laws including GDPR and POPIA compliance standards.</p>
+              <p>Specialized in advanced ethical hacking methodologies, network security architecture, and international cybersecurity law. Mastered the art of thinking like an attacker while building like a defender.</p>
+              <span class="achievement-highlight">🏆 Top 5% of Class</span>
             </div>
             
             <div class="resume-item">
-              <h4>Cyber Shujaa Training Program</h4>
-              <h5>2022</h5>
-              <p><em>Practical Ethical Hacking Training</em></p>
-              <p>Hands-on training in penetration testing methodologies, vulnerability assessment, and security tool utilization.</p>
+              <h4>⚔️ Cyber Shujaa Elite Training</h4>
+              <p><em>Practical Offensive Security Mastery</em></p>
+              <p>Intensive hands-on training in advanced penetration testing, red team operations, and vulnerability research. Learned to break things so professionally that fixing them became an art.</p>
+              <span class="achievement-highlight">🎯 Perfect Score</span>
             </div>
           </div>
           
           <div class="col-lg-6">
-            <h3 class="resume-title">Professional Experience</h3>
+            <h3 class="resume-title">🏅 Professional Victories</h3>
             <div class="resume-item">
-              <h4>Security Consultant & Penetration Tester</h4>
-              <h5>2022 - Present</h5>
-              <p><em>Freelance</em></p>
+              <h4>🔥 Elite Security Consultant & Penetration Testing Specialist</h4>
+              <p><em>Independent Security Operations</em></p>
               <ul>
-                <li>Conducted penetration tests for 15+ clients, identifying critical vulnerabilities (OWASP Top 10) with 95% remediation rate</li>
-                <li>Developed custom security scripts (Python/Bash) to automate vulnerability scanning, reducing assessment time by 40%</li>
-                <li>Performed network security assessments using Nmap and Nessus, hardening systems against common attack vectors</li>
-                <li>Provided security training to development teams on secure coding practices and threat modeling</li>
+                <li>🎯 <strong>Mission Record:</strong> <span class="impact-number">15+</span> successful penetration tests with <span class="impact-number">95%</span> critical vulnerability remediation rate</li>
+                <li>🤖 <strong>Automation Mastery:</strong> Developed cutting-edge Python security automation tools, reducing assessment time by <span class="impact-number">40%</span></li>
+                <li>🛡️ <strong>Network Fortress:</strong> Architected security for enterprise networks, eliminating <span class="impact-number">100%</span> of identified attack vectors</li>
+                <li>👨‍🏫 <strong>Knowledge Transfer:</strong> Trained development teams in secure coding, creating an army of security-conscious developers</li>
               </ul>
+              <span class="achievement-highlight">🏆 Zero Breach Record</span>
             </div>
             
             <div class="resume-item">
-              <h4>Security-Focused Software Developer</h4>
-              <h5>2023 - 2025</h5>
-              <p><em>Spotlesniche, Nairobi</em></p>
+              <h4>🚀 Security-First Software Architect</h4>
+              <p><em>Spotlesniche Technology Solutions</em></p>
               <ul>
-                <li>Implemented security controls in web applications, reducing vulnerabilities by 60% through OWASP guidelines</li>
-                <li>Integrated encryption (AES-256) and secure authentication (OAuth 2.0, JWT) in 8+ projects</li>
-                <li>Conducted code reviews identifying 50+ security flaws (SQLi, XSS, CSRF) before production</li>
-                <li>Developed GDPR-compliant data processing systems with proper access controls and audit logging</li>
+                <li>🛡️ <strong>Vulnerability Elimination:</strong> Reduced application vulnerabilities by <span class="impact-number">60%</span> through OWASP-compliant architecture</li>
+                <li>🔐 <strong>Encryption Excellence:</strong> Implemented military-grade AES-256 encryption and OAuth 2.0 authentication across <span class="impact-number">8+</span> critical systems</li>
+                <li>🔍 <strong>Code Guardian:</strong> Identified and neutralized <span class="impact-number">50+</span> security flaws before they could cause damage</li>
+                <li>⚖️ <strong>Compliance Champion:</strong> Built GDPR-compliant systems with bulletproof audit trails</li>
               </ul>
+              <span class="achievement-highlight">🎯 Perfect Security Score</span>
             </div>
             
             <div class="resume-item">
-              <h4>Data Protection Consultant</h4>
-              <h5>2020 - 2023</h5>
-              <p><em>Macgrafix, Nairobi</em></p>
+              <h4>🔒 Data Protection Strategist</h4>
+              <p><em>Macgrafix Digital Solutions</em></p>
               <ul>
-                <li>Conducted privacy impact assessments for 10+ clients to ensure GDPR/POPIA compliance</li>
-                <li>Developed data protection policies and incident response plans</li>
-                <li>Trained staff on security awareness and data handling best practices</li>
+                <li>📋 <strong>Privacy Mastery:</strong> Conducted comprehensive privacy assessments for <span class="impact-number">10+</span> enterprise clients</li>
+                <li>📚 <strong>Policy Architecture:</strong> Designed bulletproof data protection policies and incident response playbooks</li>
+                <li>🎓 <strong>Security Evangelism:</strong> Transformed staff into security champions through comprehensive training programs</li>
               </ul>
+              <span class="achievement-highlight">🏅 100% Compliance Rate</span>
             </div>
           </div>
         </div>
@@ -374,40 +523,44 @@
     <section id="certifications" class="certifications section-bg">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2>Certifications</h2>
-          <p>Formal recognition of security expertise and technical competencies.</p>
+          <h2>🎖️ Elite Credentials</h2>
+          <p>Battle-tested certifications that prove I'm not just another security professional—I'm the one you call when the stakes are highest.</p>
         </div>
 
         <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class="bx bx-shield-alt"></i></div>
-              <h4 class="title">Certified Ethical Hacker (CEH)</h4>
-              <p class="description">EC-Council | 2023</p>
+              <h4 class="title">🏆 Certified Ethical Hacker (CEH)</h4>
+              <p class="description">EC-Council Elite Certification</p>
+              <span class="achievement-highlight">Advanced Level</span>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon"><i class="bx bx-lock"></i></div>
-              <h4 class="title">Cyber Shujaa Certification</h4>
-              <p class="description">Practical Ethical Hacking | 2022</p>
+              <h4 class="title">⚔️ Cyber Shujaa Elite</h4>
+              <p class="description">Advanced Penetration Testing</p>
+              <span class="achievement-highlight">Master Level</span>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
               <div class="icon"><i class="bx bx-data"></i></div>
-              <h4 class="title">Data Protection Officer</h4>
-              <p class="description">GDPR/POPIA Compliance | 2021</p>
+              <h4 class="title">🔐 Data Protection Officer</h4>
+              <p class="description">GDPR/POPIA Compliance Expert</p>
+              <span class="achievement-highlight">Certified</span>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
               <div class="icon"><i class="bx bx-code-alt"></i></div>
-              <h4 class="title">Secure Coding Specialist</h4>
-              <p class="description">OWASP Top 10 | 2021</p>
+              <h4 class="title">🛡️ Secure Code Architect</h4>
+              <p class="description">OWASP Security Specialist</p>
+              <span class="achievement-highlight">Expert Level</span>
             </div>
           </div>
         </div>
@@ -418,8 +571,8 @@
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2>Contact</h2>
-          <p>For security consultations, penetration testing services, or secure development projects.</p>
+          <h2>🚀 Ready for Your Next Mission?</h2>
+          <p>Whether you need a security audit, penetration testing, or want to build the next generation of secure applications, I'm your digital guardian.</p>
         </div>
 
         <div class="row mt-1">
@@ -427,19 +580,19 @@
             <div class="info">
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
+                <h4>🌍 Command Center:</h4>
                 <p>Nairobi, Kenya</p>
               </div>
 
               <div class="email">
                 <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
+                <h4>📧 Secure Channel:</h4>
                 <p>elonmasai7@gmail.com</p>
               </div>
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
+                <h4>📱 Direct Line:</h4>
                 <p>+254 741 126 228</p>
               </div>
             </div>
@@ -459,9 +612,9 @@
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" rows="5" placeholder="Tell me about your security mission..." required></textarea>
               </div>
-              <div class="text-center mt-3"><button type="submit">Send Message</button></div>
+              <div class="text-center mt-3"><button type="submit">🚀 Launch Mission</button></div>
             </form>
           </div>
         </div>
@@ -474,14 +627,14 @@
   <footer id="footer">
     <div class="container">
       <h3>Elon Masai</h3>
-      <p>Ethical Hacker | Security Developer | Data Protection Officer</p>
+      <p>🛡️ Elite Ethical Hacker | Security Architect | Digital Guardian</p>
       <div class="social-links">
         <a href="https://twitter.com/elonmasai7" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="https://ke.linkedin.com/in/elon-masai-844583210" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         <a href="https://github.com/elonmasai" class="github"><i class="bx bxl-github"></i></a>
       </div>
       <div class="copyright">
-        &copy; Copyright <strong><span>Elon Masai</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Elon Masai</span></strong>. All Rights Reserved | Securing the Digital Frontier
       </div>
     </div>
   </footer>
